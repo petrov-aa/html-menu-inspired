@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+body {
+    background: #000;
+    color: #fff;
+}
+a {
+    color: #eee;
+}
+
+.wrap {
+    position: relative;
+}
+.header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    overflow: hidden;
+    background: rgba(0,0,0,.7);
+    transition: .3s background ease-out, .5s height ease-out;
+}
+.header.header.menu__active {
+    background: rgb(0,0,0);
+}
+.menu-button {
+    float: left;
+}
+.menu-button > button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.menu-button > button::before {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: 16px;
+    width: 18px;
+    height: 1px;
+    display: block;
+    background: #fff;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+.menu-button > button::after {
+    content: '';
+    position: absolute;
+    bottom: 21px;
+    left: 16px;
+    width: 18px;
+    height: 1px;
+    display: block;
+    background: #fff;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+.header.menu__active .menu-button > button::before {
+    top: 24px;
+    transform: rotate(135deg);
+    transition-timing-function: ease-in;
+}
+.header.menu__active .menu-button > button::after {
+    bottom: 25px;
+    transform: rotate(45deg);
+    transition-property: bottom, transform;
+    transition-timing-function: ease-in;
+}
+.header-logo {
+    line-height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-login {
+    float: right;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    transition-delay: .3s;
+}
+.header.menu__active .header-login {
+    transform: translate(100px, 0);
+    transition-timing-function: ease-in;
+}
+.menu {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: 50px;
+}
+.menu > ul {
+    padding-top: 10px;
+    list-style: none;
+}
+.menu li {
+    text-align: left;
+    margin: 0 50px;
+    border-bottom: 1px solid #fff;
+    transform: translate(0, -20px) scale(1.1);
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+.header.menu__active .menu li {
+    transform: translate(0, 0) scale(1);
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    line-height: 47px;
+}
+
+.content {
+    padding-top: 50px;
+}
