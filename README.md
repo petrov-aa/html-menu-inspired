@@ -8,3 +8,8 @@ Menu position can be both fixed or absolute. The demo below shows
 the concept:
 
 ![demo animation](https://raw.githubusercontent.com/petrov-aa/html-menu-inspired/master/menu_demo.gif "Demo animation")
+
+Live demonstration
+------------------
+
+Live demonstration is available on github pages: [https://petrov-aa.github.io/html-menu-inspired](https://petrov-aa.github.io/html-menu-inspired)
