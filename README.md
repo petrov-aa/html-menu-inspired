@@ -7,4 +7,4 @@ by Apple's mobile website.
 Menu position can be both fixed or absolute. The demo below shows
 the concept:
 
-![demo animation]('https://raw.githubusercontent.com/petrov-aa/html-menu-inspired/master/menu_demo.gif' "Demo animation")
+![demo animation](https://raw.githubusercontent.com/petrov-aa/html-menu-inspired/master/menu_demo.gif "Demo animation")
